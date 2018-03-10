@@ -34,8 +34,11 @@ public class DataControllerImpl {
 			HttpSession session){
 		
 		Data d = new Data();
+
 		d.setOccupation(occupation);
+
 		d.setName(name);
+
 		d.setAge(age);
 		this.dataservice.add(d);
 		Page<Data> page;
